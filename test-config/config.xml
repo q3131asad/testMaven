@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<control>
+		<port>7803</port>
+		<!--��������� -->
+		<connect_max_count>100</connect_max_count>
+		<!-- ����redis�����ļ� -->
+		<isloadjedis>false</isloadjedis>
+		<!-- ����db�����ļ� -->
+		<isloadc3p0>false</isloadc3p0>
+		<!--logͷ��ĸ -->
+		<logidhead>Z</logidhead>
+		<!--һ��������� -->
+		<saveMTBatchNum>1000</saveMTBatchNum>
+		<!--���ж�ȡ���� -->
+		<fetchDeliverMaxCount>50</fetchDeliverMaxCount>
+		<!-- ��������ڴ���� -->
+		<DELIVER_MAX_COUNT>5000</DELIVER_MAX_COUNT>
+		<!--�����̸߳��� -->
+		<DELIVER_THREAD>5</DELIVER_THREAD>
+		<!-- ��������ʱ�� -->
+		<DELVIER_SLEEP_TIME>100</DELVIER_SLEEP_TIME>
+		<!-- ������ -->
+		<BUFFER_TABLE_NAME>SMS_WAIT_MT_INTERFACE</BUFFER_TABLE_NAME>
+		<!-- ����߳��� -->
+		<SUBMIT_DB_THREAD>3</SUBMIT_DB_THREAD>
+		<!-- ���������ļ�ʱ�� -->
+		<configupdate>10000</configupdate>
+		<!-- �ƶ����غ� -->
+		<CMPPGW>0</CMPPGW>
+		<!-- ��ͨ���غ� -->
+		<UNICOMGW>1</UNICOMGW>
+		<!-- �������غ� -->
+		<TELECOMGW>4</TELECOMGW>
+		<!-- ɸ�����������������ʽ -->
+		<PATTION>1(3[0-9]|4[7]|5[0-9]|8[0-9])[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]</PATTION>
+		<!-- ǩ�� -->
+		<SIGN></SIGN>
+		<cmpp_list_name>cmpp:list</cmpp_list_name>
+		<sgip_list_name>sgip:list</sgip_list_name>
+		<smgp_list_name>smgp:list</smgp_list_name>
+
+		<moduleName>aa0001</moduleName>
+		<maxListSize>50000</maxListSize>
+
+		<msg_list_deliver>list:sms:qxt:*:report:1</msg_list_deliver>
+		<msg_list_deliver_mo>list:sms:qxt:*:deliver:1</msg_list_deliver_mo>
+		<msg_list_deliver_resend>list:sms:qxt:*:deliver:resend:1</msg_list_deliver_resend>
+		<redisListNameRealtime>list:sms:qxt:*:mt:1</redisListNameRealtime>
+		<redisListNameBatch>list:sms:qxt:*:mt:2</redisListNameBatch>
+		<msg_list_submit_exception>list:sms:qxt:submit:exception</msg_list_submit_exception>
+		<sendSmsCount>1000</sendSmsCount>
+		<updateSmsCountTime>30</updateSmsCountTime>
+		<updateUserTime>120</updateUserTime>
+
+		<redis_max_active>1000</redis_max_active>
+		<redis_max_idle>50</redis_max_idle>
+		<redis_max_wait>1000</redis_max_wait>
+		<redis_ip>221.179.180.150</redis_ip>
+		<redis_port>6379</redis_port>
+		<redis_read_time_out>100000</redis_read_time_out>
+		
+		
+		<!-- ����ip -->
+        <ipaddr>192.168.168.111</ipaddr>
+    	<!-- ��Ϣͬ����ַ -->
+    	<DogUrl>http://127.0.0.1:9011/ServiceInformationMonitor/InfoMonitorServlet</DogUrl>
+	</control>
+</config>

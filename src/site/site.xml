@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyMaven">
+    <bannerLeft>
+        <name>uxian99</name>
+        <src>images/apache-maven-project.png</src>
+        <href>http://www.apache.org/</href>
+    </bannerLeft>
+    <body>
+    <menu ref="parent" inherit="bottom" />
+    <menu ref="reports"></menu>
+    </body>
+</project>

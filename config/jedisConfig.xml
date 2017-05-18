@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="GBK"?>
+<config>
+	<common>      
+        <redis_max_active>1000</redis_max_active>
+        <redis_max_idle>50</redis_max_idle>
+        <redis_max_wait>1000</redis_max_wait>
+        <redis_ip>192.168.1.141</redis_ip> 
+       <!-- <redis_ip>192.168.1.141</redis_ip>-->
+        <redis_port>6377</redis_port>
+        <redis_read_time_out>100000</redis_read_time_out>
+        <exception_sleep_time>30000</exception_sleep_time>
+	</common> 
+	
+	<common_ex>      
+        <redis_max_active>1000</redis_max_active>
+        <redis_max_idle>50</redis_max_idle>
+        <redis_max_wait>1000</redis_max_wait>
+        <redis_ip>192.168.1.141</redis_ip> 
+        <!--<redis_ip>192.168.1.141</redis_ip>-->
+        <redis_port>6377</redis_port>
+        <redis_read_time_out>100000</redis_read_time_out>
+        <exception_sleep_time>30000</exception_sleep_time>
+	</common_ex> 
+
+	 <logic>      
+        <redis_max_active>1000</redis_max_active>
+        <redis_max_idle>50</redis_max_idle>
+        <redis_max_wait>1000</redis_max_wait>
+        <redis_ip>192.168.1.141</redis_ip>
+        <!--<redis_ip>192.168.1.141</redis_ip>-->
+        <redis_port>6378</redis_port>
+        <redis_read_time_out>100000</redis_read_time_out>
+        <exception_sleep_time>30000</exception_sleep_time>
+	</logic> 
+
+	<gateway>
+		<redis_max_active>1000</redis_max_active>
+		<redis_max_idle>50</redis_max_idle>
+		<redis_max_wait>1000</redis_max_wait>
+		 <redis_ip>192.168.1.140</redis_ip>
+		<!--<redis_ip>192.168.1.141</redis_ip>-->
+		<redis_port>6378</redis_port>
+		<redis_read_time_out>100000</redis_read_time_out>
+		<exception_sleep_time>30000</exception_sleep_time>
+	</gateway>
+</config>
